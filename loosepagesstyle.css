@@ -1,0 +1,558 @@
+/* =============== GLOBAL =============== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FAFCF3;
+    color: #2d00b3;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* =============== NAVBAR =============== */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #FAFCF3;
+    padding: 20px 40px;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-weight: bold;
+}
+
+.nav-links a {
+    background-color: #3c00d4;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #26008a;
+}
+
+/* =============== HERO =============== */
+.hero {
+  margin-top: 30px;
+     background-color: #F5F5F5; 
+    border-radius: 12px;       
+box-shadow: 9px 4px 20.9px 9px rgba(47, 0, 159, 0.17);
+padding-top: 2%;
+}
+
+.hero-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+    padding-left: 200px;
+}
+
+.hero-image img {
+    max-width: 500px;
+    width: auto;
+}
+
+
+.hero-text h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin-bottom: 15px;
+    max-width: 700px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #3c00d4;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 80px;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* =============== TITLE SECTION =============== */
+.title-section {
+    padding: 80px 10%;
+}
+
+.big-title {
+    font-size: clamp(60px, 20vw, 210px);
+    text-align: center;
+    line-height: 1;
+    font-weight: bold;
+        font-style: italic;
+    margin-bottom: 40px;
+    text-align: center; 
+}
+
+.big-title span {
+    font-weight:lighter;
+    font-style: italic;
+margin-bottom: 40px;
+    font-size: clamp(60px, 20vw, 210px);
+    text-align: center;
+    line-height: 1;
+}
+
+.about-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    padding-top: 5%;
+}
+
+.about-text {
+    flex: 2;
+    padding-right: 5%;
+}
+
+.recent {
+    flex: 1;
+    border-left: 3px solid #00cfff;
+    padding-left: 20px;
+}
+
+/* =============== IMAGE GRID =============== */
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 80px 10%;
+    align-items: flex-start;
+}
+
+.small-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+        max-width: 40%;
+}
+
+#decor-grid {rotate: 90deg;
+    max-width: 80%;
+           }
+#decor-gridR {rotate: 270deg;
+            max-width: 80%}
+
+
+.small-grid img,
+.large-image img {
+    width: 100%;
+}
+
+.large-image {
+    flex: 1;
+        max-width: 50%;
+        margin: auto;
+}
+
+/* =============== FOOTER =============== */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #e8e8e3;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* LEFT SIDE */
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-left img {
+    width: 100px;
+    height: auto;
+    display: block;
+}
+
+/* CONTACT BUTTON */
+.footer-contact {
+    background-color: #3c00d4;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+/* RIGHT SIDE ICONS */
+.footer-right {
+    display: flex;
+    align-items: center;
+}
+
+.footer-right img {
+    width: 28px;
+    height: 28px;
+    margin-left: 15px;
+    display: block;
+}
+/* ===================================== */
+/* ========== CONTACT PAGE ============= */
+/* ===================================== */
+
+/* Contact Hero Section */
+.contact-hero {
+    padding: 60px 10%;
+}
+
+.contact-title {
+    font-size: clamp(60px, 12vw, 160px);
+    font-weight: bold;
+    line-height: 0.9;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.contact-title span {
+    font-weight: lighter;
+    font-style: italic;
+     text-align: center;
+}
+
+.contact-intro {
+    margin: 20px auto;
+    max-width: 800px;
+
+}
+
+/* Contact Form Section */
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    padding: 60px 10%;
+    background-color: #F5F5F5;
+}
+
+.contact-image img {
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact-form-wrapper {
+    flex: 1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.name-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+input,
+textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #3c00d4;
+}
+
+.submit-btn {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #3c00d4;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #26008a;
+}
+
+/* Contact Links Section */
+.contact-links {
+    padding: 60px 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-links a {
+    font-size: 28px;
+    text-decoration: underline;
+}
+/* ================================================= */
+/* ========== DIGITAL/TRADITIONAL PAGES ============ */
+/* ================================================= */
+
+.video {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+/* ========== CAROUSEL ================= */
+
+.carousel{
+    display: flex;
+    width: 100%;
+    padding-top: 2%;
+    overflow-x: auto;
+}
+
+.carousel::-webkit-scrollbar {display: none;} 
+
+.carousel-trackdigital {
+    display: flex;
+    gap: 15px;
+    animation: spin 80s infinite linear;
+}
+.carousel-tracktraditional {
+    display: flex;
+    gap: 15px;
+    animation: spin 35s infinite linear;
+}
+
+.carousel-item {
+    flex: 0 0 5em;}
+.carousel-item img {
+    max-height: 30em;
+    min-height: 30em;
+    width:fit-content;
+}
+
+@keyframes spin{from {translate: 0;}
+                to {translate: -50%;}
+            }
+
+.gallery-title-section {
+    padding: 0% 10%;
+    margin: 20px auto;
+}
+
+.gallery-title {
+    font-size: clamp(60px, 12vw, 130px);
+    font-weight: bold;
+    line-height: 1;
+    margin: 20px auto;
+}
+
+.gallery-title span {
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.gallery-sub {
+    margin-top: 10px;
+}
+
+/* ========== MASONRY GALLERY ========== */
+
+.masonry-gallery {
+    column-count: 3;
+    column-gap: 30px;
+    padding: 60px 10%;
+}
+
+.gallery-item {
+    break-inside:auto;
+    margin-bottom: 40px;
+}
+
+.gallery-item img {
+    width: 100%;
+    display: block;
+}
+
+.gallery-meta {
+    text-align: left;
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+}
+
+.gallery-meta h4 {
+    margin-bottom: 3px;
+}
+
+/* ================= ABANDONED PAGE ================= */
+
+.abandoned-header {
+    text-align: center;
+    padding: 60px 10% 20px;
+}
+
+.subtitle {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.abandoned-title {
+ font-size: clamp(60px, 12vw, 160px);
+    font-weight: bold;
+    letter-spacing: -2px;
+    padding-left: 0%;
+}
+
+.abandoned-title span {
+    font-style: italic;
+    font-weight: lighter;
+}
+
+/* TABLE STYLING */
+
+.abandoned-content {
+    padding: 40px 8%;
+}
+
+.ideas-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ideas-table thead th {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #00cfff;
+}
+
+.ideas-table td {
+    padding: 40px 20px;
+    vertical-align: top;
+}
+
+/* Image Boxes */
+
+.image-box {
+    padding: 10px;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Text Cells */
+
+.text-cellleft h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.text-cellleft p {
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: right;
+}
+
+.text-cellright h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.text-cellright p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+
+/* =============== RESPONSIVE =============== */
+@media (max-width: 900px) {
+    .big-title {
+        font-size: 60px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .image-grid {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Contact Responsive */
+.contact-section {
+    flex-direction: column;
+}
+
+.name-row {
+    flex-direction: column;
+}
+
+.contact-title {
+    text-align: left;
+}
+
+.masonry-gallery {
+    column-count: 1;
+}
+
+.carousel-section {
+    flex-direction: column;
+}
+}
